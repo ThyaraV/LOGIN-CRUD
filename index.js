@@ -1,8 +1,8 @@
 import app from './src/app.js';
 //import express from 'express'
-import { connectDB } from './src/db.js';
+import { connectDb } from './src/db.js';
 
-connectDB();
+await connectDb();
 
 //const app=express()
 //export default app;
