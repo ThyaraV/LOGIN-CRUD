@@ -1,6 +1,6 @@
-import mongoose from "mongoose";
+import mongoose from "mongoose"
 
-const userSchema = mongoose.Schema({
+const userSchema = new mongoose.Schema({
     username: {
        type: String,
        required:true,
@@ -10,16 +10,17 @@ const userSchema = mongoose.Schema({
         type:String,
         required:true,
         trim:true,
+        unique:true
         
     },
     password:{
         type:String,
         required:true,
-        unique:true
     }
-
-})
+},{
+        timestamps:true
+    })
 
 //Interactuar con los métodos.
-export default mongoose.model('User',username)
+export default mongoose.model('User',userSchema)
 
