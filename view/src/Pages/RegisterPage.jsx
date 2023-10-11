@@ -38,13 +38,13 @@ function RegisterPage(){
                     <p className='text-red-500'>Usuario Requerido</p>
                 )}
             <input type="email" 
-            {...register("email",{requiered:true})}
+            {...register("email",{required:true})}
             className='w-full bg-zinc-700 text-white px-4 py-2 rounded-md my-2'placeholder='Email'/>
             {errors.email &&(
                     <p className='text-red-500'>Email Requerido</p>
                 )}
             <input type="password" 
-            {...register("password",{requiered:true})}
+            {...register("password",{required:true})}
             className='w-full bg-zinc-700 text-white px-4 py-2 rounded-md my-2'placeholder='Contraseña'/>
             {errors.password &&(
                     <p className='text-red-500'>Password Requerido</p>
