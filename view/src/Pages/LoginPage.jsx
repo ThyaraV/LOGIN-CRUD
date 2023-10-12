@@ -27,9 +27,10 @@ const navigate=useNavigate();
             
                 ))
             }
-            <h1 className='text-2xl font-bold'>Inicio Sesión</h1>
         <form onSubmit={onSubmit}
         >
+        <h1 className='text-3xl font-bold my-2'>Inicio Sesión</h1>
+
             <input type="email" 
             {...register("email",{required:true})}
             className='w-full bg-zinc-700 text-white px-4 py-2 rounded-md my-2'placeholder='Email'/>
@@ -42,7 +43,8 @@ const navigate=useNavigate();
             {errors.password &&(
                     <p className='text-red-500'>Password Requerido</p>
                 )}
-            <button type="submit">
+            <button type="submit"
+            className='bg-sky-500 text-white px-4 py-2 runded-md my-2'>
                 Login
             </button>
 

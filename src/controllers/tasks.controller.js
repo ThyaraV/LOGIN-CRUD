@@ -21,10 +21,14 @@ export const createTasks =async (req,res)=>{
     res.json(savedTask);
 };
 export const getTask =async (req,res)=>{
-    const task=await Task.findById(req.params.id).populate('user');
+    try{
+        const task=await Task.findById(req.params.id).populate('user');
 
-    if(!task) return res.status(404).json({message:"Tarea no encontrada"})
-    res.json(task)
+        if(!task) return res.status(404).json({message:"Tarea no encontrada"})
+        res.json(task)
+    }catch(error){
+        return res.Status(404).json({message:"Tarea no encontrada"});
+    }
 }
 export const updateTasks =async (req,res)=>{
     const task=await Task.findByIdAndUpdate(req.params.id,req.body,{
