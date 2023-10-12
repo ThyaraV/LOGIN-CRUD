@@ -2,7 +2,7 @@
 Login and CRUD with React and node.js
 # Mi Aplicación MERN (MongoDB, Express, React, Node.js)
 
-Bienvenido a mi aplicación MERN, una plataforma que permite a los usuarios gestionar tareas después de registrarse e iniciar sesión. A continuación, se presenta una breve explicación de la funcionalidad de inicio de sesión en la aplicación:
+Bienvenido a mi aplicación MERN, una plataforma que permite a los usuarios gestionar tareas después de registrarse e iniciar sesión. En mi aplicación MERN, el inicio de sesión permite a los usuarios autenticarse de manera segura. Cuando un usuario proporciona su correo electrónico y contraseña, el servidor verifica las credenciales y, si son correctas, emite un token de acceso. Este token se utiliza para permitir el acceso a rutas protegidas en la aplicación, asegurando que solo los usuarios autenticados puedan ver y gestionar sus tareas y perfiles.A continuación, se presenta una breve explicación de la funcionalidad de inicio de sesión en la aplicación:
 
 ## Inicio de Sesión
 
@@ -22,7 +22,8 @@ Bienvenido a mi aplicación MERN, una plataforma que permite a los usuarios gest
 
 - **ProtectedRoute:** Se ha implementado una ruta protegida que redirige a los usuarios no autenticados a la página de inicio de sesión. Esta ruta protege las páginas de tareas y perfil.
 
-En resumen, el inicio de sesión en mi aplicación MERN garantiza la autenticación segura de los usuarios y les permite acceder a sus tareas y perfiles después de proporcionar credenciales válidas.
+# Diagrama LOGIN
+![image](https://github.com/ThyaraV/LOGIN-CRUD/assets/96449161/f185d0e1-9865-4dcd-bf52-a71b81d3043e)
+![image](https://github.com/ThyaraV/LOGIN-CRUD/assets/96449161/230c1cf0-a944-43ce-9531-99dcb25f26c4)
 
-¡Gracias por visitar mi aplicación! Siéntete libre de explorar y gestionar tus tareas.
 
