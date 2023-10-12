@@ -9,7 +9,7 @@ function TasksPage(){
     getTasks()
   },[])
 
-  if(tasks.length==0)return(<h1>No exiten tareas registradas</h1>);
+  if(tasks.length==0)return(<h1>No existen tareas registradas</h1>);
 
   return (
     <div className="grid  md:grid-cols-2 grid-cols-3 gap-2">
