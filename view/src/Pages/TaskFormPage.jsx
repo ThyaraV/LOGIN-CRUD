@@ -18,24 +18,25 @@ function TaskFormPage(){
       if(params.id){
         const task=await getTask(params.id);
         console.log(task)
-        setValue('title',task.title)
-        setValue('description',task.description)
+        setValue('title',task.title);
+        setValue('description',task.description);
+        setValue("date",dayjs(task.date).utc().format("YYYY-MM-DD"));
       }
     }
     loadTask();
   },[]);
 
   const onSubmit=handleSubmit((data)=>{
+    const dataValid={
+      ...data,
+      date:data.date ? dayjs.utc(data.date).format():dayjs.utc().format(),
+    }
+    //if(data.date) dataValid.date=dayjs.utc(data.date).format();
+    
     if(params.id){
-      updateTask(params.id,{
-        ...data,
-        date:dayjs.utc(data.date).format()
-      });
+      updateTask(params.id,dataValid);
     }else{
-      createTask({
-        ...data,
-        date:dayjs.utc(data.date).format()
-      });
+      createTask(dataValid);
     }
     navigate('/tasks');
 
