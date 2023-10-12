@@ -5,7 +5,7 @@ function TaskFormPage(){
   const {createTask}=useTasks();
 
   const onSubmit=handleSubmit((data)=>{
-    console.log(data);
+    createTask(data);
   });
   return(
     <div className="bg-zinc-800 max-w-md w-full p-10 rounded-ss-md">

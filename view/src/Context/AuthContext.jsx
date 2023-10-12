@@ -52,6 +52,13 @@ export const AuthProvider=({children})=>{
         }
     },[errors])
 
+    const logout =()=>{
+        Cookies.remove("token");
+        setIsAuthenticated(false);
+        setUser(null);
+    }
+    
+
     useEffect(()=>{
       async function checkLogin(){
         const cookies=Cookies.get();
@@ -85,6 +92,7 @@ export const AuthProvider=({children})=>{
             signup,
             signin,
             loading,
+            logout,
             user,
             isAuthenticated,
             errors

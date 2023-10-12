@@ -19,6 +19,9 @@ function RegisterPage(){
        signup(values);
     });
 
+    useEffect(()=>{
+        if(isAuthenticated)navigate("/tasks");
+    },[isAuthenticated])
     return(
         <div className='bg-zinc-800 max-w-md p-10 rounded-md'>
             {
