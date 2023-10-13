@@ -27,6 +27,7 @@ Express es un framework minimalista para Node.js que simplifica el desarrollo de
 
 ### ARQUITECTURA DE FRAMEWORKS
 ![image](https://github.com/ThyaraV/LOGIN-CRUD/assets/96449161/f7b7d0a8-e7a1-4349-bc83-3e6d6a16f0af)
+![image](https://github.com/ThyaraV/LOGIN-CRUD/assets/96449161/83613e8c-b440-45e2-ba58-309659627294)
 
 Un sistema CRUD (Create, Read, Update, Delete) en una aplicación MERN (MongoDB, Express.js, React, Node.js) sigue la arquitectura MVC (Model-View-Controller). En esta arquitectura:
 
