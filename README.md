@@ -1,3 +1,40 @@
+# DISEÑO DE INGENIERÍA
+La ingeniería web se ha vuelto fundamental en el mundo digital de hoy, y para crear aplicaciones web robustas y escalables, es esencial contar con herramientas adecuadas. Entre los frameworks más destacados, React, Node.js y Express se destacan por sus características únicas y su popularidad en el desarrollo web moderno.
+
+## Frameworks
+## REACT-La Biblioteca de JavaScript para Interfaces de Usuario
+React es una biblioteca de JavaScript desarrollada y mantenida por Facebook que se ha convertido en una de las opciones más populares para construir interfaces de usuario (UI) interactivas y dinámicas. Algunas de sus características más notables incluyen:
+
+[Componentización] React permite dividir la interfaz de usuario en componentes reutilizables, lo que facilita la construcción y el mantenimiento de aplicaciones complejas.
+[Virtual-DOM] Utiliza un Virtual DOM para actualizar eficientemente la UI, minimizando las actualizaciones en el DOM real y mejorando el rendimiento de la aplicación.
+[Amplia-Comunidad] React cuenta con una comunidad activa y una amplia gama de bibliotecas y herramientas complementarias, lo que facilita la creación de aplicaciones personalizadas.
+
+## NODE.JS-Plataforma para Construir Aplicaciones Web Rápidas y Escalables
+
+Node.js es una plataforma de tiempo de ejecución de JavaScript que permite ejecutar código JavaScript en el lado del servidor. Algunas de sus características destacadas son:
+
+[Eficiencia] Node.js utiliza un modelo de E/S no bloqueante que lo hace altamente eficiente y adecuado para aplicaciones en tiempo real y de alta concurrencia.
+[NPM(Node-Package-Manager] Ofrece acceso a un vasto ecosistema de paquetes y módulos, lo que facilita la gestión de dependencias y el desarrollo rápido.
+[Escalabilidad] Node.js es altamente escalable gracias a su modelo de eventos y su capacidad para manejar múltiples conexiones simultáneas.
+
+## Express - Framework Minimalista para Node.js
+
+Express es un framework minimalista para Node.js que simplifica el desarrollo de aplicaciones web y APIs. Sus características notables incluyen:
+
+[Rutas-y-Middleware] Express ofrece un sistema de manejo de rutas y middleware que facilita la creación de rutas personalizadas y el procesamiento de solicitudes HTTP.
+[Amplia-Adopción] Es ampliamente adoptado en la comunidad de desarrollo de Node.js y cuenta con una gran cantidad de complementos y extensiones disponibles.
+[Flexibilidad] Express es lo suficientemente flexible como para adaptarse a una variedad de aplicaciones web, desde simples APIs hasta aplicaciones web complejas.
+
+### ARQUITECTURA DE FRAMEWORKS
+![image](https://github.com/ThyaraV/LOGIN-CRUD/assets/96449161/f7b7d0a8-e7a1-4349-bc83-3e6d6a16f0af)
+Un sistema CRUD (Create, Read, Update, Delete) en una aplicación MERN (MongoDB, Express.js, React, Node.js) sigue la arquitectura MVC (Model-View-Controller). En esta arquitectura:
+
+- **Modelo (Model):** Representa la capa de datos de la aplicación y se relaciona con la base de datos, típicamente MongoDB en aplicaciones MERN. El Modelo define cómo se estructuran y almacenan los datos. Mapea a las colecciones de la base de datos y establece las operaciones de CRUD a través de un ODM (Object-Document Mapping) como Mongoose. Esto implica la creación de esquemas para los datos y la lógica para interactuar con la base de datos.
+
+- **Vista (View):** Representa la interfaz de usuario (UI) de la aplicación, generalmente construida utilizando React en una aplicación MERN. La Vista es responsable de la presentación de datos al usuario y la recolección de información a través de formularios u otros elementos de la interfaz. También se encarga de mostrar los datos recuperados del Modelo.
+
+- **Controlador (Controller):** Actúa como un intermediario entre el Modelo y la Vista. En una aplicación MERN, esta capa se construye utilizando Node.js y Express.js. El Controlador maneja las solicitudes del cliente, procesa la lógica empresarial, y se comunica con el Modelo para realizar operaciones CRUD en la base de datos. Responde a las solicitudes HTTP (por ejemplo, GET, POST, PUT, DELETE) y gestiona las rutas y las acciones correspondientes.
+
 # LOGIN-CRUD
 Login and CRUD with React and node.js
 # Mi Aplicación MERN (MongoDB, Express, React, Node.js)
