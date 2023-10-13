@@ -27,6 +27,7 @@ Express es un framework minimalista para Node.js que simplifica el desarrollo de
 
 ### ARQUITECTURA DE FRAMEWORKS
 ![image](https://github.com/ThyaraV/LOGIN-CRUD/assets/96449161/f7b7d0a8-e7a1-4349-bc83-3e6d6a16f0af)
+
 Un sistema CRUD (Create, Read, Update, Delete) en una aplicación MERN (MongoDB, Express.js, React, Node.js) sigue la arquitectura MVC (Model-View-Controller). En esta arquitectura:
 
 - **Modelo (Model):** Representa la capa de datos de la aplicación y se relaciona con la base de datos, típicamente MongoDB en aplicaciones MERN. El Modelo define cómo se estructuran y almacenan los datos. Mapea a las colecciones de la base de datos y establece las operaciones de CRUD a través de un ODM (Object-Document Mapping) como Mongoose. Esto implica la creación de esquemas para los datos y la lógica para interactuar con la base de datos.
@@ -36,10 +37,9 @@ Un sistema CRUD (Create, Read, Update, Delete) en una aplicación MERN (MongoDB,
 - **Controlador (Controller):** Actúa como un intermediario entre el Modelo y la Vista. En una aplicación MERN, esta capa se construye utilizando Node.js y Express.js. El Controlador maneja las solicitudes del cliente, procesa la lógica empresarial, y se comunica con el Modelo para realizar operaciones CRUD en la base de datos. Responde a las solicitudes HTTP (por ejemplo, GET, POST, PUT, DELETE) y gestiona las rutas y las acciones correspondientes.
 
 # LOGIN-CRUD
-Login and CRUD with React and node.js
 # Mi Aplicación MERN (MongoDB, Express, React, Node.js)
 
-Bienvenido a mi aplicación MERN, una plataforma que permite a los usuarios gestionar tareas después de registrarse e iniciar sesión. En mi aplicación MERN, el inicio de sesión permite a los usuarios autenticarse de manera segura. Cuando un usuario proporciona su correo electrónico y contraseña, el servidor verifica las credenciales y, si son correctas, emite un token de acceso. Este token se utiliza para permitir el acceso a rutas protegidas en la aplicación, asegurando que solo los usuarios autenticados puedan ver y gestionar sus tareas y perfiles.A continuación, se presenta una breve explicación de la funcionalidad de inicio de sesión en la aplicación:
+Una plataforma que permite a los usuarios gestionar tareas después de registrarse e iniciar sesión. En la aplicación MERN, el inicio de sesión permite a los usuarios autenticarse de manera segura. Cuando un usuario proporciona su correo electrónico y contraseña, el servidor verifica las credenciales y, si son correctas, emite un token de acceso. Este token se utiliza para permitir el acceso a rutas protegidas en la aplicación, asegurando que solo los usuarios autenticados puedan ver y gestionar sus tareas y perfiles.A continuación, se presenta una breve explicación de la funcionalidad de inicio de sesión en la aplicación:
 
 ## Inicio de Sesión
 
